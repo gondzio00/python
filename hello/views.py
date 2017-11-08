@@ -7,10 +7,8 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    r = requests.get('http://httpbin.org/status/418')
-    print(r.text)
-    times= int(os.environ.get('TIMES', 10))
-    return render(request, 'index.html')
+    a = "work"
+    return render(request, 'index.html',format(a))
 
 
 def db(request):
