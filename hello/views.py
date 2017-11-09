@@ -4,6 +4,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import PostForm
 from django.utils import timezone
+from django.shortcuts import redirect
+
 
 from .models import Greeting
 
