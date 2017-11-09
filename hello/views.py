@@ -3,6 +3,7 @@ import requests
 from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import PostForm
+from django.utils import timezone
 
 from .models import Greeting
 
