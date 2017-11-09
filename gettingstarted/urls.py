@@ -14,4 +14,5 @@ urlpatterns = [
     url(r'^db', hello.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^post/new/$', hello.views.post_new, name='post_new'),
+    url(r'^post/(?P<pk>[0-9]+)/$', hello.views.post_detail, name='post_detail'),
 ]
